@@ -1,0 +1,604 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Assistant', sans-serif;
+}  
+
+h1{
+    font-family: "trajan-pro-3", serif; 
+    font-weight: 600; 
+    text-align: center;
+    font-style: normal;
+    font-size: 6vw;
+    margin-top: -1vw;
+    color: #e0644a; 
+}
+
+h2{
+    font-family: "trajan-pro-3", serif; 
+    font-weight: 600; 
+    font-style: normal; 
+    font-size: 2vw;
+    margin-bottom: -1vw; 
+    margin-top: -1vw;
+}
+@media screen and (max-width:720px) {
+   h2{font-size:2.5vw;}
+}
+
+@media screen and (max-width:290px) {
+   h2{font-size:3vw;}
+}
+
+h3{
+    font-family: cortado, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+p, li, button, label{
+    font-size: 1.2vw;
+}
+@media screen and (max-width:720px) {
+   p, li, button, label{font-size:1.5vw;}
+}
+
+@media screen and (max-width:420px) {
+   p, li, button, label{font-size:2vw;}
+}
+@media screen and (max-width:290px) {
+   p, li, button, label{font-size:3vw;}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1.5vw;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+body{
+    
+}
+
+#toppen{
+    padding:0px;
+}
+
+.link{
+    font-weight:bold;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.dropbtn {
+  background-color: #f1f1f1;
+  color: grey;
+    font-weight: bold;
+    width: 210%;
+    padding: 1.6vw;
+  font-size: 1.6vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+    margin-top: 1vw;
+  position: fixed;
+  display: inline-block;
+    z-index: 14;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+font-size: 1vw;
+  min-width: 16vw;
+  box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+@media screen and (max-width:720px) {
+   .dropdown-content{font-size:2.5vw;}
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 1.2vw 1.6vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: grey;
+    color:white;
+}
+
+#logo{
+    position: fixed;
+    z-index: 11;
+    margin-top: -1vw;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#logo img{
+    margin-top: 1vw;
+    margin-left: 45%;
+    margin-bottom: 0.5vw;
+    width: 10%;
+}
+
+.overskrift{
+    color:#e0644a;
+    padding-top: -2vw;
+    margin-top: -2.5vw;
+    font-size: 4.5vw;
+    }
+
+
+#forsidebilde{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: 7vw;
+    margin-bottom: 0;
+ }
+
+
+.slogan{
+    position: relative;
+    z-index: 2;
+    margin-top: -20vw;
+    margin-right: 1vw;
+    padding: 2vw;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    width: 23%;
+    float: right;
+    }
+
+.slogan p{
+    margin-top: -4vw;
+    float: right;
+    font-size: 2vw;
+}
+
+.rop{
+    float:right;
+    font-size: 4vw;
+    color: #e0644a;
+    margin-top:0;
+}
+
+.artikkelbilde{
+        width: 100%;
+        margin-top: 3vw;     
+}
+
+.opp-bilde{
+    display: block;
+    width: 100%;
+    margin-bottom: -25vw;
+}
+
+.boks{
+    display: block;
+    width: 100%;
+    padding:1vw;
+    border-bottom: 0.5vw solid #e0644a;
+    border-top: 0.5vw solid #e0644a;
+}
+
+.intro{
+    padding:2vw;
+    padding-left: 10vw;
+    padding-right:10vw;
+    text-align: center;
+}
+
+.aktuelt{
+    padding-left: 2vw;
+    width: 98%;
+    margin-bottom: 3vw;   
+}
+
+#kategori{
+    width: 100%;
+    text-align: center;
+    margin-top: -5vw;
+    float:left;
+    color: grey;
+}
+
+
+#kategori ul li{
+    display: inline-block;
+    width: 10vw;
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+#kategori ul li:hover{
+    font-weight: bolder;
+}
+
+
+
+.grid-container-oppskrift {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1vw;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+
+@media screen and (max-width:720px) {
+   .grid-container-oppskrift{grid-template-columns:100%;}
+}
+
+
+.grid-container-oppskrift> div {
+    padding: 0;
+    background-color:#ffffff;
+}
+
+
+
+.item1{
+    height: 12vw;
+    margin-top:-5vw;
+    margin-bottom: 5vw;
+    z-index: -2;
+}
+
+<!--Overskrifter over hver oppskriftskategori-->
+
+.item2, .item3, .item4{
+    text-align: center;
+    margin-top: -10vw;
+    margin-bottom: -4vw;
+}
+
+
+#jakke, #skjerf,#votter,#sokker{
+    margin-top: -2vw;
+    margin-bottom: 10vw;
+    width: 100%;
+    height: 10vw;
+    }
+
+@media screen and (max-width:720px){
+    #jakke, #skjerf,#votter,#sokker{
+        margin-top: 0;
+    }   
+}
+
+.beskrivelse{
+    width: 100%;
+    margin-left:0;
+    margin-top:25vw;
+    margin-bottom:0;
+    padding:2vw 2vw;
+    background-color: #ffffff;
+    border-top-color: #e0644a;
+    border-bottom-color: #e0644a;
+    border-style: solid none solid none;
+    border-width: 0.5vw 0vw 0.5vw 0vw;
+}
+
+
+button{
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    color:grey;
+    background-color: #f1f1f1;
+}
+
+button:hover{
+    color:#ffffff;
+    font-weight: bolder;
+    background-color: grey;
+}
+
+
+.bestill{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 8vw;
+    margin-top: -5.5vw;
+    margin-left: 70%;
+}
+
+.bestill:hover{
+    background-color: grey;
+    border:none;
+    }
+
+@media screen and (max-width:720px) {
+    .bestill{margin-top:-10vw; margin-left: 85vw;}
+}
+
+.mellomoverskrift{
+    width: 100%;
+    text-align: center;
+}
+#pre-skjema{
+    width: 100;
+    height: 10vw;
+    margin-bottom: -10vw
+}
+
+form{
+    margin-top: 10vw;
+    width: 100%;
+}
+
+label{
+    display:block;
+    margin: 1vw;
+    font-weight: bold;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 10px;
+}
+
+.svarknapp{
+    width:25%;
+    border: none;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    color: grey;
+    font-weight: bold;
+}
+
+.svarknapp:hover{
+    background-color: grey;
+    color: #ffffff;
+}
+
+.påmelding{
+    float:right;
+    background-color: grey;
+    color:white;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 17%;
+}
+
+#kalender{
+    position:relative;
+    width: 100%;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    font-size: 5vw;
+    color:#e0644a
+}
+
+#pre-kalender, #januar, #februar, #mars, #april, #mars, #april, #mai, #juni, #juli, #august, #september, #oktober, #november, #desember{
+    height: 10vw;
+    margin-top: -10vw;
+    }
+
+
+.ramme{
+    height: 3vw;
+    overflow: hidden;
+}
+
+.ramme:hover{
+    height: 100%;
+}
+
+.open{
+    margin-left: 40%;
+    margin-bottom: 4vw;
+    margin-top: -2vw;
+    padding: 0.5vw;
+    background-color: grey;
+    text-align: center;
+    width: 20%;
+    height: 1vw;
+}
+
+
+.month {
+  padding: 0px 5vw;
+  width: 100%;
+  text-align: center;
+}
+
+.month ul {
+border-top: 0.5vw solid;
+border-bottom: 0.5vw solid;
+border-color: #e0644a;
+    
+}
+
+.month ul li {
+  color: grey;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month ul li span{
+     font-family: cortado, sans-serif;
+    font-weight: 100;
+    font-style: normal; 
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  color: #777;
+    height: 10vw;
+    vertical-align:top;
+}
+
+#helg{
+    list-style-type: none;
+  display: inline-block;
+  width: 40.8%;
+  text-align: center;
+  color: #777;
+    height: 12vw;
+}
+
+@media screen and (max-width: 420px) {
+  .days li, #helg {height:10vw;}  
+}
+
+
+@media screen and (max-width: 290px) {
+    #helg {height:18vw;}
+            }
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+.grid-container-om{
+    display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.item10{
+    width: 100%;
+}
+
+.item11{
+    width: 80%;
+    margin-right:20%;
+    border-top: 0.5vw solid #e0644a;
+    border-bottom: 0.5vw solid #e0644a;
+}
+
+footer{
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    background-color: #f1f1f1;
+}
+
+#adresse{
+    width: 25%;
+    display: inline-block;
+    margin-left: 8%;
+}
+    
+#some{
+    width: 25%;
+    display:inline-block;
+    margin-left: 4%;
+}
+.fa {
+  padding: 2vw;
+  font-size: 2vw;
+  width: 5vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background:  #125688;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+#bet{
+    width: 25%;
+    display:inline-block;
+    margin-right: 8%;
+}
